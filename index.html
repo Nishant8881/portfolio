@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nishant Kumar Yadav | Software Developer</title>
+  <meta name="description" content="Portfolio of Nishant Kumar Yadav: Java, Spring Boot and React developer.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="#home" class="logo">Nishant Kumar Yadav</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">Menu</button>
+    <nav id="navLinks" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <button class="theme-btn" id="themeBtn" aria-label="Switch to dark theme">Dark</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <p class="hello">Hi, I'm</p>
+        <h1>Nishant Kumar Yadav</h1>
+        <p class="role">I build backend services with Java and Spring Boot, and web interfaces with React.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="resume.pdf" download>Download resume</a>
+        </div>
+      </div>
+      <pre class="code" aria-label="Summary of Nishant as Java code"><code><span class="c">// Developer.java</span>
+<span class="k">public class</span> <span class="t">Nishant</span> {
+  <span class="k">String</span> stack  = <span class="s">"Java, Spring Boot, React"</span>;
+  <span class="k">String</span> data   = <span class="s">"MySQL"</span>;
+  <span class="k">String</span> focus  = <span class="s">"REST APIs, DSA"</span>;
+  <span class="k">boolean</span> openToWork = <span class="k">true</span>;
+}</code></pre>
+    </section>
+
+    <section id="about">
+      <h2>About me</h2>
+      <div class="about-grid">
+        <p>I'm a final-year computer science student who enjoys turning problems into working software. I write clean, object-oriented code in Java, C++ and Python, and I like building complete features: a database, a REST API and a front end that people can use.</p>
+        <p>I've built my foundation in data structures, algorithms, DBMS, operating systems and computer networks, and I work in teams using Git and GitHub. I'm looking for a software developer role where I can keep learning and ship real products.</p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <dl class="skills">
+        <div><dt>Programming</dt><dd><span>Java</span><span>C++</span><span>Python</span></dd></div>
+        <div><dt>Web</dt><dd><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React.js</span></dd></div>
+        <div><dt>Backend</dt><dd><span>Spring Boot</span><span>REST APIs</span></dd></div>
+        <div><dt>Database</dt><dd><span>SQL</span><span>MySQL</span></dd></div>
+        <div><dt>Core CS</dt><dd><span>Data Structures &amp; Algorithms</span><span>OOP</span><span>DBMS</span><span>Computer Networks</span><span>Operating Systems</span></dd></div>
+        <div><dt>Tools</dt><dd><span>Git</span><span>GitHub</span><span>VS Code</span></dd></div>
+        <div><dt>Soft skills</dt><dd><span>Problem solving</span><span>Communication</span><span>Teamwork</span><span>Time management</span></dd></div>
+      </dl>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <!-- Edit the title, text, tech and links of each project below. Copy an <article> to add more. -->
+      <div class="projects">
+        <article class="project">
+          <h3>Software Development Project</h3>
+          <p>Describe what it does and who it helps in 2 lines. Mention your part: backend APIs, database design or the user interface.</p>
+          <ul class="tags"><li>Java</li><li>Spring Boot</li><li>MySQL</li><li>REST APIs</li></ul>
+          <div class="links"><a href="https://github.com/your-username/project-1">Source code</a><a href="#">Live demo</a></div>
+        </article>
+        <article class="project">
+          <h3>Web Application</h3>
+          <p>A responsive React app. Explain the main feature and the problem it solves.</p>
+          <ul class="tags"><li>React.js</li><li>JavaScript</li><li>CSS</li></ul>
+          <div class="links"><a href="https://github.com/your-username/project-2">Source code</a><a href="#">Live demo</a></div>
+        </article>
+        <article class="project">
+          <h3>Database Management System</h3>
+          <p>A schema-driven application with queries, joins and reports. Say what data it manages.</p>
+          <ul class="tags"><li>SQL</li><li>MySQL</li><li>Java</li></ul>
+          <div class="links"><a href="https://github.com/your-username/project-3">Source code</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p class="lead">Have an opportunity or a question? Send me a message.</p>
+      <div class="contact-grid">
+        <form id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name">
+          <span class="err" data-for="name"></span>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email">
+          <span class="err" data-for="email"></span>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5"></textarea>
+          <span class="err" data-for="message"></span>
+          <button class="btn primary" type="submit">Send message</button>
+          <p class="status" id="formStatus" role="status"></p>
+        </form>
+        <ul class="reach">
+          <li><a href="mailto:your-email@example.com">your-email@example.com</a></li>
+          <li><a href="https://github.com/Nishant8881">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/Nishant-Kumar-Yadav-078744274">LinkedIn</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>&copy; <span id="year"></span> Nishant Kumar Yadav</footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
